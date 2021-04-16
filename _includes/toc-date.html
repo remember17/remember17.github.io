@@ -1,0 +1,66 @@
+<div class="book-summary">
+    <!-- <div id="book-search-input" role="search">
+        <input type="text" placeholder="Type to search" />
+    </div> -->
+    <nav role="navigation">
+        <ul class="summary">
+            
+            <!-- {% if page.url == "/index.html" or page.url == "/" %}
+            <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
+            {% else %}
+            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
+            {% endif %}
+                <a href="{{site.baseurl}}">
+                    {{ site.title | escape }}
+                </a>
+            </li> -->
+
+            <li class="chapter" data-level="1.1" data-path="https://www.fivehow.com">
+                <a href="https://www.fivehow.com">
+                    主页
+                </a>
+            </li>
+
+            <li class="chapter" data-level="1.1" data-path="https://github.com/remember17">
+                <a href="https://github.com/remember17">
+                    GitHub
+                </a>
+            </li>
+
+            <li class="chapter" data-level="1.1" data-path="https://www.fivehow.com/navigation/2017-06-06-iOS-navigation.html">
+                <a href="https://www.fivehow.com/navigation/2017-06-06-iOS-navigation.html">
+                    iOS
+                </a>
+            </li>
+
+            <li class="chapter" data-level="1.1" data-path="https://www.fivehow.com/navigation/2017-06-06-tech-navigation.html">
+                <a href="https://www.fivehow.com/navigation/2017-06-06-tech-navigation.html">
+                    Tech
+                </a>
+            </li>
+
+            <li class="chapter" data-level="1.1" data-path="https://www.fivehow.com/navigation/2017-06-06-articles-navigation.html">
+                <a href="https://www.fivehow.com/navigation/2017-06-06-articles-navigation.html">
+                    Articles
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <!-- {% assign reversed_posts = site.posts | reverse %} -->
+            {% assign reversed_posts = site.posts %}
+
+            {% for post in reversed_posts %}
+                {% if page.url == post.url %}
+                <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                {% else %}
+                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                {% endif %}
+                    <a href="{{site.baseurl}}{{post.url}}">
+                        {{ post.title | escape }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,39 @@
+<div class="body-inner">
+    
+    <div class="page-wrapper" tabindex="-1" role="main">
+        <div class="book-header" role="navigation">
+            <h1>
+                <i class="fa fa-circle-o-notch fa-spin"></i>
+                {% if page.title %}
+                    <a href="." ></a>
+                {% else %}
+                    <a href="." ></a>
+                {% endif %}
+            </h1>
+        </div>
+
+        <!-- <div style="height: 60px;">
+            <a class="btn-top-navi" href="https://www.fivehow.com"><i class="fa fa-home"></i></a>
+            <a class="btn-top-navi" href="https://github.com/remember17"><i class="fa fa-github"></i></a>
+        </div> -->
+
+        <div class="page-inner">
+            <div id="book-search-results">
+                <div class="search-noresults">
+                    <section class="normal markdown-section">
+
+                        {% if page.title %}
+                        <h1 id="{{ page.id }}">{{ page.title | escape }}</h1>
+                        {% else %}
+                        <h1 id="{{ page.id }}">{{ site.title | escape }}</h1>
+                        {% endif %}
+
+                        {{ content }}
+                    </section>
+                </div>
+
+                <!-- {%- include search.html -%} -->
+            </div>
+        </div>
+    </div>
+</div>
