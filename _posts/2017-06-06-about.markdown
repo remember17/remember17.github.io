@@ -1,0 +1,27 @@
+---
+layout: post
+title: Tech
+date:   2017-06-06
+categories: [about]
+tags: [about]
+---
+
+# About
+
+👉　吴浩
+
+🚀　[GitHub](https://github.com/remember17)
+
+🍎　iOS开发 
+
+🔨　Swift / OC / Flutter
+
+🍿　了解：HTML / CSS / JS
+
+🌱　正在学习 React
+
+🧭　当前位置：上海
+
+📮　[wuhao.code@gmail.com](mailto:wuhao.code@gmail.com)
+
+🔥　喜欢写代码，看电影，打篮球，打游戏
